@@ -1,22 +1,26 @@
-scene.setTileMap(img`
-f f f e e e e e e e f f f f e e e e e e e f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
-f b b b e e e e e b b b b b b e e e e e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b e e e b b b b b b b b e e e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b e b b b b b b b b b e e e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b b b b b b b b b e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b b b b b b b b b b b b 7 b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b 7 b b b b b b b b b 7 7 7 b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b 7 7 7 b b b b b b b 7 7 7 2 7 b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b 7 7 7 2 7 b b b b b b 7 2 7 7 7 b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b 7 2 7 7 7 b b b b b b b b e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b 7 7 7 b b b b b b b b b e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f b b b b b b b b e b b b b b b b b b b e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
-f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f 
-f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
-`, TileScale.Sixteen)
-let thor = sprites.create(img`
+namespace myTiles {
+    //% blockIdentity=images._tile
+    export const tile0 = img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`
+}
+function Hero () {
+    thor = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -58,7 +62,102 @@ let thor = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
-scene.cameraFollowSprite(thor)
-thor.setVelocity(50, 0)
-controller.moveSprite(thor, 0, 50)
-thor.setPosition(40, 0)
+    scene.cameraFollowSprite(thor)
+    thor.setVelocity(90, 0)
+    controller.moveSprite(thor, 0, 200)
+    thor.setPosition(40, 115)
+}
+function Background () {
+    scene.setTileMap(img`
+f e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
+f c c c e e e e e c c c c c c e e e e e c c c c c c c e e e e e c c c c c c c c c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b e e e c b b b b b b b e e e c b b b b b b b b e e e c b b b b b 5 b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b e c b b b b b b b b e e e c b b b b b b b b e e e c b b b b b c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b c b b b b b b b b b b e c b b b b b b b b b e e e c b b b b b e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b b b b b b b b b b b c b b b b b b b b b b e e e c b b b b b e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b b b b b b b b b b b b b b b b b b b b b b e e e c b b b b e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b 5 b b c b b b b b 5 b b b b b b b b b b b b b e c b b b b b e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b b b e c b b b b b b b b b b c b b b b b b b e c b b b b b e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b b e e e c b b b b b b b b b e c b b b b b b c b b b b b b e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b e e e e e c b b b b b b b e e e c b b b b b b b b b b b e e e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b b e e e e e c b b b b b b b e e e c b b b b b b b b b b b e e e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f b b b b b e e e e e e e c b b b b b e e e e e c b 5 b b b b b b b b e e e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f c c c c c e e e e e e e c c c c c c e e e e e c c c c c c c c c c c e e e e e c b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b f 
+f e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+`, TileScale.Sixteen)
+    scene.setTile(14, img`
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+`, true)
+    scene.setTile(5, img`
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+b b b b b b b b b b b b b b b b 
+`, false)
+    game.splash("Find the Exit...")
+    game.splash("the Stars Will Increase ", "Your Speed...")
+    game.splash("Be Careful for the Bats!", "Press A to Throw Your Hammer.")
+}
+function powerups () {
+    for (let value of scene.getTilesByType(5)) {
+        star = sprites.create(img`
+b b b b b b b f f b b b b b b b 
+b b b b b b f 5 5 f b b b b b b 
+b b b b b b f 5 5 f b b b b b b 
+b b b b b f 5 5 5 5 f b b b b b 
+f f f f f f 5 5 5 5 f f f f f f 
+f 4 5 5 5 5 5 5 5 5 5 5 5 5 4 f 
+b f 4 5 5 5 f 5 5 f 5 5 5 4 f b 
+b b f 4 5 5 f 5 5 f 5 5 4 f b b 
+b b b f 4 5 5 5 5 5 5 4 f b b b 
+b b b f 4 5 5 5 5 5 5 4 f b b b 
+b b f 4 5 5 5 5 5 5 5 5 4 f b b 
+b b f 4 5 5 5 4 4 5 5 5 4 f b b 
+b f 4 5 5 4 4 f f 4 4 5 5 4 f b 
+b f 4 4 4 f f b b f f 4 4 4 f b 
+f 4 4 f f b b b b b b f f 4 4 f 
+f f f b b b b b b b b b b f f f 
+`, SpriteKind.Food)
+        scene.place(value, star)
+    }
+}
+scene.onHitTile(SpriteKind.Player, 14, function (sprite) {
+    game.over(false)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    thor.vx += 20
+    otherSprite.destroy()
+})
+let star: Sprite = null
+let thor: Sprite = null
+Background()
+Hero()
+powerups()
