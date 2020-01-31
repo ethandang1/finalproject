@@ -22,30 +22,6 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `
 }
-function Spawn () {
-    // Spawns enemy walls
-    for (let value of scene.getTilesByType(14)) {
-        wall2 = sprites.create(img`
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-`, SpriteKind.wall)
-        scene.place(value, wall2)
-    }
-}
 scene.onHitTile(SpriteKind.Player, 14, function (sprite) {
     // You lose when you touch the brown blocks
     game.over(false)
@@ -94,7 +70,6 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 })
 function Background () {
     // Makes the black block a wall
-    //
     scene.setTile(15, img`
 f f f f f f f f f f f f f f f f 
 f f f f f f f f f f f f f f f f 
@@ -245,6 +220,30 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     thor.say("Ouch!", 100)
     music.powerDown.play()
 })
+function Spawn () {
+    // Spawns enemy walls
+    for (let value2 of scene.getTilesByType(14)) {
+        wall2 = sprites.create(img`
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e e e e e e 
+`, SpriteKind.wall)
+        scene.place(value2, wall2)
+    }
+}
 // When sprite hits the "green block" they lose
 scene.onHitTile(SpriteKind.Player, 7, function (sprite) {
     game.over(true)
@@ -305,11 +304,11 @@ function Hero () {
     // sets lives to 3
     info.setLife(3)
 }
+let wall2: Sprite = null
 let enemyy: Sprite = null
 let projectile: Sprite = null
 let thor: Sprite = null
 let star: Sprite = null
-let wall2: Sprite = null
 Background()
 Hero()
 powerups()
